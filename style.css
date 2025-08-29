@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #555555;
     border-radius: 4px;
 }
 
@@ -42,10 +42,21 @@ nav ul li a:hover {
 
 /*body*/
 
+.container {
+    max-width:1864px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 254px;
+    margin-bottom: 80px; /* To avoid overlap with footer */
+}
+
 h1 {
     text-align: center;
-    color: #333;
-    margin-top: 40px;
+    color: #ffffff;
+    margin-top: 130px;
     font-size: 2.5em;
 }
 
@@ -68,26 +79,74 @@ button:hover {
 }
 
 p {
-    text-align: center;
-    color: #555;
-    font-size: 1.2em;
-    margin: 20px 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: black;
+    padding: 0 20px;
+    font-size: 1.1em;
 }
 
-p {
+h2 {
     text-align: center;
-    color: #555;
-    font-size: 1.2em;
-    margin: 20px 40px;
-    margin-top: 10px;
+    color: #333;
+    margin-top: 20px;
+    font-size: 2em;
 }
+
+.container2 {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    font-size: 1.1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container2 h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.container2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.container2 li {
+    list-style: none;
+}
+
+.container2 a {
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.container2 a:hover {
+    background: #e0e0e0;
+}
+
+
 
 
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 12px 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
